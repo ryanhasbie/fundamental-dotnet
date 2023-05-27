@@ -2,39 +2,27 @@
 {
     public static void Main(string[] args)
     {
-        // if else
-        var hour = 10;
-        if (hour < 12 && hour > 0)
+        // for loop
+        for (int i = 0; i < 10; i++)
         {
-            Console.WriteLine("Good Morning");
-        } else if (hour > 12 && hour < 18)
-        {
-            Console.WriteLine("Good Afternoon");
-        } else 
-        {
-            Console.WriteLine("Good Night");
+            Console.WriteLine($"Loop ke {i}");
         }
 
-        // switch
-        var grade = 'A';
-        switch (grade)
+        // while loop
+        var j = 0;
+        while (j < 10)
         {
-            case 'A':
-                Console.WriteLine("Excelent");
-                break;
-            case 'B':
-                Console.WriteLine("Good");
-                break;
-            case 'C':
-                Console.WriteLine("Not Bad");
-                break;
-            case 'D':
-                Console.WriteLine("Fail");
-                break;
-            default:
-                Console.WriteLine("Grade not valid!");
-                break;
+            Console.WriteLine($"While loop ke-{j}");
+            j++;
         }
+
+        // do while
+        var k = 0;
+        do
+        {
+            Console.WriteLine($"Do While ke-{k}");
+            k++;
+        } while (k < 10);
     }
 }
 
