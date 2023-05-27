@@ -2,27 +2,20 @@
 {
     public static void Main(string[] args)
     {
-        // for loop
-        for (int i = 0; i < 10; i++)
-        {
-            Console.WriteLine($"Loop ke {i}");
-        }
+        // String Input
+        // Console.WriteLine("Enter your name: ");
+        // var inputUser = Console.ReadLine();
+        // Console.WriteLine(inputUser);
 
-        // while loop
-        var j = 0;
-        while (j < 10)
-        {
-            Console.WriteLine($"While loop ke-{j}");
-            j++;
-        }
+        // Number Input
+        Console.WriteLine("Enter number 1: ");
+        var number1 = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Enter number2: ");
+        var number2 = Convert.ToInt32(Console.ReadLine());
+        var result = number1 + number2;
+        Console.WriteLine("Result: ");
+        Console.WriteLine(result);
 
-        // do while
-        var k = 0;
-        do
-        {
-            Console.WriteLine($"Do While ke-{k}");
-            k++;
-        } while (k < 10);
     }
 }
 
