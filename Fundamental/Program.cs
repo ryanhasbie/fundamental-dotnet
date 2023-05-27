@@ -2,6 +2,7 @@
 {
     public static void Main(string[] args)
     {
+        // if else
         var hour = 10;
         if (hour < 12 && hour > 0)
         {
@@ -12,6 +13,27 @@
         } else 
         {
             Console.WriteLine("Good Night");
+        }
+
+        // switch
+        var grade = 'A';
+        switch (grade)
+        {
+            case 'A':
+                Console.WriteLine("Excelent");
+                break;
+            case 'B':
+                Console.WriteLine("Good");
+                break;
+            case 'C':
+                Console.WriteLine("Not Bad");
+                break;
+            case 'D':
+                Console.WriteLine("Fail");
+                break;
+            default:
+                Console.WriteLine("Grade not valid!");
+                break;
         }
     }
 }
