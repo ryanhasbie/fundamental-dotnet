@@ -2,16 +2,17 @@
 {
     public static void Main(string[] args)
     {
-        /* 
-            Arithmetic Operator => +, -, *, /, %
-            Assignment Operator => =
-            Comapration Operator (Mengembalikan Boolean) => <, >, <=, >=, ==, !=
-        */
-
-        // Increment, Decrement (i++, i--, ++i, --i)
-        int c = 10;
-        Console.WriteLine(c);
-        Console.WriteLine(c++);
+        var hour = 10;
+        if (hour < 12 && hour > 0)
+        {
+            Console.WriteLine("Good Morning");
+        } else if (hour > 12 && hour < 18)
+        {
+            Console.WriteLine("Good Afternoon");
+        } else 
+        {
+            Console.WriteLine("Good Night");
+        }
     }
 }
 
