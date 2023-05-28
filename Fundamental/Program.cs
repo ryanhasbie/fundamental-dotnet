@@ -1,32 +1,35 @@
 ﻿namespace Fundamental;
 
+public enum Day
+{
+    Sunday,
+    Monday,
+    Tuesday,
+    Wednesday,
+    Thursday,
+    Friday,
+    Saturday,
+}
+
 public class Program
 {
+
+    // Enum in class
+    public enum Gender
+    {
+        Male, Female
+    }
+
+
     public static void Main(string[] args)
     {
-        SayHello();
-        Message("Ryan");
-        Console.WriteLine(Sum(10,10));
-        var anonimous = delegate ()
-        {
-            Console.WriteLine("This is anonimus function..");
-        };
-        anonimous();
+        Console.WriteLine(GetRole());
+        Console.WriteLine(Day.Friday);
     }
 
-    static void SayHello()
+    static Gender GetRole ()
     {
-        Console.WriteLine("Hello, World!");
-    }
-
-    static void Message(string message)
-    {
-        Console.WriteLine($"Good Morning {message}");
-    }
-
-    static int Sum(int x, int y)
-    {
-        return x + y;
+        return Gender.Male;
     }
 }
 
