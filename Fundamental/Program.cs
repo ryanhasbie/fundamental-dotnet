@@ -9,8 +9,9 @@ public class Program
         Console.WriteLine(Sum(10,10));
         var anonimous = delegate ()
         {
-            Console.WriteLine();
+            Console.WriteLine("This is anonimus function..");
         };
+        anonimous();
     }
 
     static void SayHello()
