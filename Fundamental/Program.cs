@@ -1,5 +1,8 @@
-﻿namespace Fundamental;
+﻿using System.Net;
 
+namespace Fundamental;
+
+// Enum out class
 public enum Day
 {
     Sunday,
@@ -11,7 +14,7 @@ public enum Day
     Saturday,
 }
 
-public class Program
+public class NoProgram
 {
 
     // Enum in class
@@ -21,7 +24,7 @@ public class Program
     }
 
 
-    public static void Main(string[] args)
+    public void Main(string[] args)
     {
         Console.WriteLine(GetRole());
         Console.WriteLine(Day.Friday);
