@@ -9,7 +9,7 @@ namespace Fundamental;
 public class ReferenceAndValue
 {
 
-    public static void Main(string[] args)
+    /*public static void Main(string[] args)
     {
         
         int a = 10;
@@ -47,8 +47,8 @@ public class ReferenceAndValue
         jazz.Brand = "Honda";
 
         Console.WriteLine(ayla.Brand);
-        Console.WriteLine(jazz.Brand); */
-    }
+        Console.WriteLine(jazz.Brand); 
+    } */
     
     // Passing by value
     public static void Show(int a)
