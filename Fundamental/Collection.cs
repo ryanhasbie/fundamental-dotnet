@@ -28,6 +28,32 @@ public class Collection
             - SortedList x
          */
 
+        /*
+            HashSet: Untuk menyimpan data, hanya menyimpan unique value
+         */
+
+        var names = new HashSet<string>();
+        names.Add("Ryan");
+        names.Add("Hasbie");
+        names.Add("Dika");
+        names.Add("Dika");
+
+        // Update HashSet
+        // 1. Hapus datanya
+        names.Remove("Ryan");
+        // 2. Tambahkan ulang
+        names.Add("Cristiano");
+
+        foreach (var name in names)
+        {
+            Console.WriteLine(name);
+        }
+
+    }
+
+    private void List() 
+    {
+
         // Cara Pertama
         List<int> numbers = new();
         numbers.Add(1);
@@ -60,18 +86,23 @@ public class Collection
         {
             Console.WriteLine($"Final city: {city}"); 
         } */
+    }
 
-        Console.WriteLine("Inputkan cities yang akan diubah: ");
+    private static void UpdateList(List<string> cities)
+    {
+        // Simple program update city
+        Console.WriteLine("Inputkan kota yang akan diubah: ");
         for (int i = 0; i < cities.Count; i++)
         {
             var city = cities[i];
             Console.WriteLine($"{i + 1}. {city}");
         }
 
-        var input = int.Parse( Console.ReadLine() );
+        var input = int.Parse(Console.ReadLine());
         for (var j = 0; j < cities.Count; j++)
         {
             if (j != input - 1) continue;
+            Console.WriteLine("Input nama kota yang baru: ");
             var inputUpdate = Console.ReadLine();
             cities[j] = inputUpdate;
         }
