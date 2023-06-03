@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -30,8 +31,27 @@ public class Collection
 
         /*
             HashSet: Untuk menyimpan data, hanya menyimpan unique value
+            HashTable: Yang menyimpan datanya berupa key dan value
+            Dictionary: Menyimpan data berupa key dan value bedanya dictionary itu generic
          */
 
+        var hashtable = new Hashtable();
+        hashtable.Add(1, "Karawang");
+        hashtable.Add(2, "Jakarta");
+        hashtable.Add("3", 50);
+
+        hashtable[1] = "Bandung";
+        hashtable["3"] = true;
+
+        foreach (DictionaryEntry entry in hashtable)
+        {
+            Console.WriteLine($"Key: {entry.Key}. Value: {entry.Value}");
+        }
+
+    }
+
+    private void HashSet()
+    {
         var names = new HashSet<string>();
         names.Add("Ryan");
         names.Add("Hasbie");
@@ -48,7 +68,6 @@ public class Collection
         {
             Console.WriteLine(name);
         }
-
     }
 
     private void List() 
