@@ -32,10 +32,19 @@ public class ExceptionHandling
         {
             Console.WriteLine("Ini code setelah error: ");
         } */
-        try
+        /* try
         {
             FindName();
         } catch (Exception e)
+        {
+            Console.WriteLine(e.Message);
+        }
+        Console.WriteLine("Code setelah error!"); */
+        try
+        {
+            FindName();
+        }
+        catch (NotFoundException e)
         {
             Console.WriteLine(e.Message);
         }
@@ -60,7 +69,16 @@ public class ExceptionHandling
             temp = item; 
         }
 
-        if (temp is null) throw new Exception("Name not found!");
+        if (temp is null) throw new NotFoundException("Name not found!");
         return temp;
     }
+}
+
+public class NotFoundException : Exception
+{
+    public NotFoundException(string? message) : base(message)
+    { 
+
+    }
+
 }
