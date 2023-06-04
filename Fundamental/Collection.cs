@@ -9,7 +9,7 @@ namespace Fundamental;
 
 public class Collection
 {
-    public static void Main(string[] args)
+    public void Main(string[] args)
     {
         /* 
             Collection mirip seperti array dan ada banyak macamnya
@@ -34,7 +34,10 @@ public class Collection
             HashTable: Yang menyimpan datanya berupa key dan value
             Dictionary: Menyimpan data berupa key dan value bedanya dictionary itu generic
         */
+    }
 
+    private void Sorted()
+    {
         var sortedList = new SortedList
         {
             {1, "Jakarta" },
@@ -49,7 +52,7 @@ public class Collection
         sortedSet.Add("Ryan");
         sortedSet.Add("Dika");
 
-        foreach (var item in sortedSet) 
+        foreach (var item in sortedSet)
         {
             Console.WriteLine(item);
         }
