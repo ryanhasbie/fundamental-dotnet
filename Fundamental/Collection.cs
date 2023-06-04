@@ -33,13 +33,28 @@ public class Collection
             HashSet: Untuk menyimpan data, hanya menyimpan unique value
             HashTable: Yang menyimpan datanya berupa key dan value
             Dictionary: Menyimpan data berupa key dan value bedanya dictionary itu generic
-         */
+        */
 
+        var cities = new Dictionary<string, string>();
+        cities.Add("Indonesia", "Jakarta");
+        cities.Add("Thailand", "Bangkok");
+        cities.Add("Malaysia", "Kuala lumpur");
+
+        foreach (var kvp in cities)
+        {
+            Console.WriteLine($"Key: {kvp.Key}, Value: {kvp.Value}");
+        }
+
+    }
+
+    private void HashTable()
+    {
         var hashtable = new Hashtable();
         hashtable.Add(1, "Karawang");
         hashtable.Add(2, "Jakarta");
         hashtable.Add("3", 50);
 
+        // Update Hashtable
         hashtable[1] = "Bandung";
         hashtable["3"] = true;
 
@@ -48,6 +63,8 @@ public class Collection
             Console.WriteLine($"Key: {entry.Key}. Value: {entry.Value}");
         }
 
+        // Remove Hashtable
+        hashtable.Remove(1);
     }
 
     private void HashSet()
