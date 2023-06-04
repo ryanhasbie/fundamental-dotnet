@@ -35,6 +35,33 @@ public class Collection
             Dictionary: Menyimpan data berupa key dan value bedanya dictionary itu generic
         */
 
+        var sortedList = new SortedList
+        {
+            {1, "Jakarta" },
+            {4, "Bogor" },
+            {2, "Boolean" }
+        };
+
+        var sortedDictionary = new SortedDictionary<string, string>();
+
+        var sortedSet = new SortedSet<string>();
+        sortedSet.Add("Ryan");
+        sortedSet.Add("Ryan");
+        sortedSet.Add("Dika");
+
+        foreach (var item in sortedSet) 
+        {
+            Console.WriteLine(item);
+        }
+
+        /* foreach (DictionaryEntry item in sortedList)
+        {
+            Console.WriteLine($"Key: {item.Key}, Value: {item.Value}");
+        } */
+    }
+
+    private void Dictionary()
+    {
         var cities = new Dictionary<string, string>();
         cities.Add("Indonesia", "Jakarta");
         cities.Add("Thailand", "Bangkok");
